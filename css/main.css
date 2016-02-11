@@ -5,6 +5,7 @@
     
     body {
         background-color: #000000;
+        font-family: 'Arapey', serif;
     }
     
     .crossfade > figure {
@@ -67,9 +68,18 @@
     }
     
     .text {
+        width: 20%;
         color: #fff;
         position: relative;
         z-index: 1;
+        margin-left: auto;
+        transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
     }
     
-    
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
