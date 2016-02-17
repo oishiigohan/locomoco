@@ -5,7 +5,7 @@
     
     body {
         background-color: #000000;
-        font-family: 'Arapey', serif;
+        font-family: 'Roboto Slab', serif;
     }
     
     .crossfade > figure {
@@ -68,7 +68,8 @@
     }
     
     .text {
-        width: 50%;
+        width: 95%;
+        font-size: 70px;
         color: #fff;
         position: relative;
         z-index: 1;
@@ -83,3 +84,4 @@
         color: #fff;
         display: block;
     }
+    

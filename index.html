@@ -7,15 +7,15 @@
     <title>locomoco</title>
     <meta name="description" content="An image crossfade animation done with CSS3">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel=”shortcut icon” href=”favicon.ico” /> shortcut icon
 
     <link rel="stylesheet" href="./js/assets/animate.css">
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.textillate.js"></script>
-    <script src="js/assets/jquery.lettering.js"></script>
-    <script src="js/assets/jquery.fittext.js"></script>
-    
-    <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
+    <script src="js/remodal.min.js"></script>
+    <link rel="stylesheet" href="js/remodal.css">
+    <link rel="stylesheet" href="js/remodal-default-theme.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -27,59 +27,30 @@
         <figure></figure>
     </div>
 
+    <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<h1>profiel</h1>
+	<p>melonpan</p>
+</div>
+
     <div class="text">
-       <h1>text</h1>
-        <p class="textillate">aiuwooojdihfueah</p>
-        <a href="">profiel</a>
-        <a href="">aaa</a>
+        <h1>Popsicle</h1>
+        <a href="#modal">profiel</a>
+        <a href="./site3/index.html" target="_blank">site1</a>
+        <a href="./photo/index.html" target="_blank">site2</a>
+
+        
+        
+
+
     </div>
-
-    <script>
-        $(function () {
-            $('.textillate').textillate();
-            ({
-                // ループ
-                loop: true,
-                // 間隔時間
-                minDisplayTime: 2000,
-                // 遅延時間
-                initialDelay: 0,
-                // 自動スタート
-                autoStart: true,
-                // アニメーションの開始オプション
-                in : {
-                    // エフェクト
-                    effect: 'fadeIn',
-                    // 遅延時間の指数
-                    delayScale: 1.5,
-                    // 文字の遅延時間
-                    delay: 200,
-                    // アニメーションを同時実行
-                    sync: false,
-                    // アニメーションをランダム実行
-                    shuffle: true,
-                    // アニメーションをリバース実行
-                    reverse: false
-                },
-                // アニメーションの終了オプション
-                out: {
-                    // エフェクト
-                    effect: 'fadeOut',
-                    // 遅延時間の指数
-                    delayScale: 1.5,
-                    // 文字の遅延時間
-                    delay: 200,
-                    // アニメーションを同時実行
-                    sync: true,
-                    // アニメーションをランダム実行
-                    shuffle: false,
-                    // アニメーションをリバース実行
-                    reverse: false
-                }
-            });
-
-        });
+    
+    <script type="text/javascript">
+    $('[data-remodal-id=modal]').remodal();
     </script>
+
+
+    
 
 </body>
 
