@@ -87,6 +87,7 @@
     
     .text a:hover {
         color: #898989;
+        transition: 0.5s;
     }
     
     .remodal a {

@@ -5,57 +5,64 @@
     <link rel="stylesheet" href="style.css">
     <title>PHOTO</title>
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <script src="jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="./js/menu/classie.js"></script>
+    <script src="./js/menu/main.js"></script>
+    <script src="./js/menu/snap.svg-min.js"></script>
+    <link rel="stylesheet" href="./js/menu/menu_topexpand.css">
     
-    <script type="text/javascript">
-     $(function() {
-     $('#sample').fadeIn(3000);
-});
-    $(function(){
-    $(window).load(function(){
-        var delaySpeed = 100;
-        var fadeSpeed = 1000;
-        $('figure').each(function(i){
-            $(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
-        });
-         });
-         });
-    
-    
-    </script>
-    
+   
   
     
-    <link rel="stylesheet" href="lity.min.css">
-    <script src="jquery.js"></script>
-    <script src="lity.min.js"></script>
+    <link rel="stylesheet" href="./js/lity/lity.min.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/lity/lity.min.js"></script>
 </head>
 
 
 
 <body id="sample">
-   
-
-
-  
-  
-   
+ 
+ 
+<div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                                <!-- メニューの箇所 -->
+                               
     
-<div id="header">
-    <div class="one">
-     <h1>PHOTO</h1>
-     <h2>since 2012,06,16</h2>
-    </div>
-       <div class="two">
-        <ul>
-           <li><a href="../index.html" class="top toop">top</a></li>
-           <li><a href="../MyWebSite/index.html" class="main">main</a></li>
-           <li><a href="https://www.facebook.com/fuukayo" class="toop">facebook</a></li>
-        </ul>
-    </div>
+            
+ 
+                <a href="../index.html" class="one">top</a>
+                <a href="#" class="two">text</a>
+                <a href="#" class="one">text</a>
+            </div>
+        </nav>
+<!--<button class="close-button" id="close-button"></button>-->
+<div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+<path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+</svg>
 </div>
+</div>
+<button class="menu-button" id="open-button">Open Menu</button>
+ 
+<div class="content-wrap">
+<div class="content">
+ 
+<!-- コンテンツ部分 -->
+ 
+<!--</div><!-- /content-wrap -->
+<!--</div><!-- /container -->
+   
+    <!--</div>-->
 
-  
+
+
+  <div id="header">
+      <h1>photo</h1>
+      <h2>since 2012,22222</h2>
+  </div>
            
              
      
@@ -323,9 +330,29 @@
     </div>                          
 </div>
     </div>
+    
+     <script type="text/javascript">
+     $(function() {
+     $('#sample').fadeIn(3000);
+});
+    $(function(){
+    $(window).load(function(){
+        var delaySpeed = 100;
+        var fadeSpeed = 1000;
+        $('figure').each(function(i){
+            $(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+        });
+         });
+         });
+    
+    
+    </script>
+    
+    <script src="js/menu/classie.js"></script>
+    <script src="js/menu/main.js"></script>
+    
    
   
-         
-    
+    </div></div>
 </body>
 </html>
