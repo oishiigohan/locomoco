@@ -8,7 +8,7 @@
     <meta name="description" content="An image crossfade animation done with CSS3">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel=”shortcut icon” type="image/x-icon" href=”iavicon.ico”> 
+    <link rel=”shortcut icon” type="image/x-icon" href=”iavicon.ico”>
 
     <link rel="stylesheet" href="./js/assets/animate.css">
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -17,72 +17,78 @@
     <link rel="stylesheet" href="js/remodal-default-theme.css">
     <script type="text/javascript" src="./js/jquery.balloon.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
-    
+
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Coming+Soon' rel='stylesheet' type='text/css'>
 </head>
 
+
+
 <body>
- <!--   <div class="crossfade">
+    <!--   <div class="crossfade">
         <figure></figure>
         <figure></figure>
         <figure></figure>
         <figure></figure>
         <figure></figure>
     </div>-->
-    
-  
+
+
     <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
         <button data-remodal-action="close" class="remodal-close"></button>
-        <div class="left"><img src="./img/icecandy.png" alt=""></div>
+        <div class="left">
+        <img src="./img/icecandy.png" alt="">
+        </div>
         <div class="right">
-        <h1>ABOUT</h1>
-        <h2>Popsicle</h2>
-        <p>このさいとについてとか書く</p>
-        <p>あいすをぽちっと</p>
-        <p>blah blah blah</p>
-        <p>Nikon D3200 / SIGMA 30mm f1.4</p>
-        <a href="https://github.com/oishiigohan" target="_blank"><img src="./img/GitHub-Mark-32px.png" alt=""></a>
-        <a href="https://twitter.com/fy1125" target="_blank"><img src="./img/TwitterLogo.png" alt=""></a>
-        <a href="https://www.instagram.com/fu_1125/" target=”_blank”><img src="./img/Glyph_Logo_png.png" alt=""></a>
-        </div></div>
-        
-        
+            <h1>ABOUT</h1>
+            <h2>Popsicle</h2>
+            <p>このさいとについてとか書く</p>
+            <p>あいすをぽちっと</p>
+            <p>blah blah blah</p>
+            <p>Nikon D3200 / SIGMA 30mm f1.4</p>
+            <a href="https://github.com/oishiigohan" target="_blank"><img src="./img/GitHub-Mark-32px.png" alt=""></a>
+            <a href="https://twitter.com/fy1125" target="_blank"><img src="./img/TwitterLogo.png" alt=""></a>
+            <a href="https://www.instagram.com/fu_1125/" target=”_blank”><img src="./img/Glyph_Logo_png.png" alt=""></a>
+        </div>
+    </div>
+
+
 
     <div class="camera">
-    
-        <a href="" title="まだなにもないよ"><img src="./img/red.png" alt=""></a>
-        <a href="./site1/index.html" target="_blank" title="text"><img src="./img/blue.png" alt=""></a>
-        <a href="./site2/index.html" target="_blank" title="あいうえお"><img src="./img/yellow.png" alt=""></a>
-        
+
+        <a href="" title="Construction..."><img src="./img/red.png" alt=""></a>
+        <a href="./site1/index.html" target="_blank" title="2column?"><img src="./img/blue.png" alt=""></a>
+        <a href="./site2/index.html" target="_blank" title="いんすたみたいなかんじ"><img src="./img/yellow.png" alt=""></a>
+
     </div>
-   
+
     <div class="text">
-       <h1>popsicle</h1>
+        <h1>popsicle</h1>
         <a href="#modal">about</a>
     </div>
 
 
-<!--<div class="link">
-        <a href="#modal">about</a>
-        <a href="./site1/index.html" target="_blank">site1</a>
-        <a href="./site2/index.html" target="_blank">site2</a>
-    </div>  --> 
+    
 
     <script type="text/javascript">
         $('[data-remodal-id=modal]').remodal();
-        $('.camera a').balloon(
-        { position: "bottom" ,
-        css: {
-    border: 'solid 1px #5baec0',
-    padding: '3px',
-    paddingLeft: '10px',
-            paddingRight: '10px',
-    backgroundColor: '#fff',
-    color: '#898989',
-    boxShadow: 'none',
-  }
-        }
- );
+       
+
+            $('.camera a').balloon({
+                position: "top",
+                offsetY: 155,
+                css: {
+                    border: 'solid 1px #5baec0',
+                    padding: '3px',
+                    paddingLeft: '10px',
+                    paddingRight: '10px',
+                    backgroundColor: '#fff',
+                    color: '#898989',
+                    boxShadow: 'none',
+                    fontFamily: 'kajuden-fontfull1regular'
+                }
+            
+            
+            });
     </script>
 
 
