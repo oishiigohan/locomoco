@@ -226,6 +226,12 @@
     margin-top: 10px;
     text-align: right;
     float: right;
+    opacity: 0.3;
+}
+
+.right img:hover{
+    opacity: 0.65;
+    transition: 1s;
 }
 
 

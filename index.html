@@ -41,9 +41,9 @@
         <div class="right">
             <h1>ABOUT</h1>
             <h2>Popsicle</h2>
-            <p>このさいとについてとか書く</p>
-            <p>あいすをぽちっと</p>
-            <p>blah blah blah</p>
+            <p>写真のポートフォリオサイト的なやつ</p>
+            <p>あいすをぽちっと！</p>
+            <p>あいすはリンクになってます</p>
             <p>Nikon D3200 / SIGMA 30mm f1.4</p>
             <a href="https://github.com/oishiigohan" target="_blank"><img src="./img/GitHub-Mark-32px.png" alt=""></a>
             <a href="https://twitter.com/fy1125" target="_blank"><img src="./img/TwitterLogo.png" alt=""></a>
@@ -55,7 +55,7 @@
 
     <div class="camera">
 
-        <a href="" title="Construction..."><img src="./img/red.png" alt=""></a>
+        <a href="javascript:void(0);" title="音なります 大音量で！" onclick="PlaySound();"><img src="./img/red.png" alt=""></a>
         <a href="./site1/index.html" target="_blank" title="2column?"><img src="./img/blue.png" alt=""></a>
         <a href="./site2/index.html" target="_blank" title="いんすたみたいなかんじ"><img src="./img/yellow.png" alt=""></a>
 
@@ -90,6 +90,17 @@
             
             
             });
+        
+        var audioElem;
+ 
+    function PlaySound() {
+      audioElem = new Audio();
+      audioElem.src = "Popsicle.wav";
+      audioElem.play();
+    }
+    function StopSound(){
+      audioElem.pause();
+    }
     </script>
 
 
