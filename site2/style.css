@@ -30,6 +30,12 @@ body {
     font-family: 'Amatic SC', cursive;
     text-decoration: none;
     color: #000;
+    display: inline;
+}
+
+.menu p {
+    font-family: 'Amatic SC', cursive;
+    display: inline;
 }
 
 .menu .one:hover {
